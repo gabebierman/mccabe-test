@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import HomePage from './components/home/HomePage';
 
-function HelloWorld() {
-  return <h1 className='greeting'>HelloWorld</h1>
-}
+// function HelloWorld() {
+//   return <h1 className='greeting'>HelloWorld</h1>
+// }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <HelloWorld />
+    <App/>
   </React.StrictMode>
 );
 
