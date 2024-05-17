@@ -17,18 +17,19 @@ function App() {
 return(
 <>
 <Router>
-<HomePage />
+{/* <HomePage /> */}
   <Routes>
-    <Route path="/" element={<HomePage />}></Route>
+    {/* <Route path="/" element={<HomePage />}></Route> */}
+    <Route path="/home" element={<HomePage />}></Route>
     <Route path="/about" element={<AboutPage />}></Route>
     <Route path="/contact" element={<ContactPage />}></Route>
     <Route path="/areasofpractice" element={<AOPPage />}></Route>
     <Route path="/location" element={<LocationPage />}></Route>
-    
+    <Route path="/*" element={<Navigate to="/home" />}></Route>
   </Routes>
 </Router>
 </>
-)
+);
 }
 
 export default App;
